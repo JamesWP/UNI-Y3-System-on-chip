@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("COMP32211" "drawing_line_wrapper") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("COMP32211")
+simVerilogNetlistFileCellList = '(("COMP32211" 
+	("drawing_line_wrapper")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

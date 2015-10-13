@@ -1,0 +1,109 @@
+TOOL:	ncxlmode	12.10-s005: Started on Oct 12, 2015 at 13:46:44 BST
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-y
+	/opt/cadtools5/xil_cds_design_kits/verilog/unisims
+	+libext+.v
+	-l
+	simout.tmp
+	/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.template
+	-f /home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/verilog.inpfiles
+		ihnl/cds0/netlist
+	-f /opt/info/courses/COMP32211/Cadence/reffiles/include
+		/opt/cadtools5/ise8.1i/verilog/src/glbl.v
+		+incdir+..
+		+ncreflib+/home/mbax3jp2/Cadence/COMP32211/COMP32211_compiled
+		+loadpli1=/opt/info/courses/COMP32211/Cadence/reffiles/libenv.so:my_bootstrap1
+		+nccoverage+all
+		+nccovoverwrite
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -access +w  -access +c  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/10ps -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/.simTmpNCCmd "
+	+mpssession+virtuoso27200
+	+mpshost+E-C07KILF913.it.manchester.ac.uk
+Recompiling... reason: unable to stat '/./unit_1.vp'.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'check' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'check' ....... Done
+		Caching library 'COMP32211_compiled' ....... Done
+
+	Extracting FSMs for coverage:
+		check.drawing_line_wrapper
+		check.test
+		check.glbl
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:              47      47
+		Scalar wires:           14       -
+		Expanded wires:         40       4
+		Vectored wires:         12       -
+		Always blocks:           5       5
+		Initial blocks:         15      15
+		Cont. assignments:       6      12
+		Pseudo assignments:     11      11
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: check.test:template
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /local/cds_root/INCISIV121/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> probe -create -shm test.top.ack test.top.busy test.top.clk test.top.de_ack test.top.de_addr test.top.de_data test.top.de_nbyte test.top.de_req test.top.r0 test.top.r1 test.top.r2 test.top.r3 test.top.r4 test.top.r5 test.top.r6 test.top.r7 test.top.req
+Created probe 2
+ncsim> run
+[                   0] Test Start
+[               30000] Parameters Set
+[               31000] Waiting for ack
+[               50000] Got ack
+[               90000] Plot(x=322,y=  2,d=00000000,e=1011)
+[              130000] Plot complete
+[              170000] Plot(x=482,y=  2,d=00000000,e=0111)
+[              210000] Plot complete
+[              250000] Plot(x=  3,y=  3,d=00000000,e=1110)
+[              290000] Plot complete
+[              330000] Plot(x=163,y=  3,d=00000000,e=1101)
+[              370000] Plot complete
+[              410000] Plot(x=323,y=  3,d=00000000,e=1011)
+[              450000] Plot complete
+[              490000] Plot(x=483,y=  3,d=00000000,e=0111)
+[              530000] Plot complete
+[              570000] Plot(x=  4,y=  4,d=00000000,e=1110)
+[              610000] Plot complete
+[              650000] Plot(x=164,y=  4,d=00000000,e=1101)
+[              690000] Plot complete
+[              730000] Plot(x=324,y=  4,d=00000000,e=1011)
+[              770000] Plot complete
+[              810000] Plot(x=484,y=  4,d=00000000,e=0111)
+[              850000] Plot complete
+[              890000] Plot(x=  5,y=  5,d=00000000,e=1110)
+[              910000] Finished plotting
+Simulation stopped via $stop(1) at time 910 NS + 3
+ncsim> ^C
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  test(test)
+  dutinst  :  glbl(glbl)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_66e33369_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_66e33369_00000000.ucd
+TOOL:	ncxlmode	12.10-s005: Exiting on Oct 12, 2015 at 13:58:25 BST  (total: 00:11:41)

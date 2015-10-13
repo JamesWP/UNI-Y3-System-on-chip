@@ -1,0 +1,44 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "drawing_line_wrapper"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+( "r6" 15 0  "r6" 15 0  )
+( "de_addr" 17 0  "de_addr" 17 0  )
+( "r0" 15 0  "r0" 15 0  )
+( "r7" 15 0  "r7" 15 0  )
+( "r2" 15 0  "r2" 15 0  )
+( "r3" 15 0  "r3" 15 0  )
+( "de_data" 31 0  "de_data" 31 0  )
+( "de_nbyte" 3 0  "de_nbyte" 3 0  )
+( "r4" 15 0  "r4" 15 0  )
+( "r5" 15 0  "r5" 15 0  )
+( "r1" 15 0  "r1" 15 0  )
+ )
+( net
+ )
+( inst
+ )
+( model
+( "COMP32211/drawing_line_wrapper/schematic" "drawing_line_wrapper" )
+ )
+( term
+ )
+( param
+ )
+( "drawing_line_wrapper" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,4 @@
+SOFTINCLUDE /local/cds_root/INCISIV121/tools/inca/files/cds.lib
+include ../../cds.lib
+define COMP32211_compiled ../../../COMP32211_compiled
+define worklib ../worklib

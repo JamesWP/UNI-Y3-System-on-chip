@@ -1,0 +1,28 @@
+
+`timescale 1ns / 10ps
+
+module test;
+
+
+wire  ack, busy, de_req;
+
+reg  clk, de_ack, req;
+
+wire [3:0]  de_nbyte;
+wire [31:0]  de_data;
+wire [17:0]  de_addr;
+
+reg [15:0]  r1;
+reg [15:0]  r5;
+reg [15:0]  r4;
+reg [15:0]  r3;
+reg [15:0]  r2;
+reg [15:0]  r7;
+reg [15:0]  r0;
+reg [15:0]  r6;
+
+
+
+drawing_line_wrapper top(ack, busy, de_addr, de_data, de_nbyte, de_req
+     , clk, de_ack, r0, r1, r2, r3, r4, r5, r6, r7, req); 
+ 

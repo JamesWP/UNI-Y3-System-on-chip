@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+COMP32211/drawing_line_wrapper/schematic drawing_line_wrapper
+$endmodel
+$net
+$endnet
+$param
+$endparam

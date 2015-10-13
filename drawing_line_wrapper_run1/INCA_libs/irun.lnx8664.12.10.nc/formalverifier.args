@@ -1,0 +1,14 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
+-COVERAGE
+all
+-COVOVERWRITE
+-NOSTDOUT
+-NOCOPYRIGHT
+-MPSSESSION
+virtuoso27200
+-MPSHOST
+E-C07KILF913.it.manchester.ac.uk
+-MESSAGES

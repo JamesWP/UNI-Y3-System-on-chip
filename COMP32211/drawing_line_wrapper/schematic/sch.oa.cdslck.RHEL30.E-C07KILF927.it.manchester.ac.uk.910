@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      mbax3jp2
+HostName                       E-C07KILF927.it.manchester.ac.uk
+ProcessIdentifier              910
+ProcessCreationTime_UTC        1444743010
+ProcessCreationTime_Readable   Tue Oct 13 14:30:10 2015 BST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/mbax3jp2/Cadence/COMP32211/COMP32211/drawing_line_wrapper/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue Oct 13 14:30:36 2015 BST

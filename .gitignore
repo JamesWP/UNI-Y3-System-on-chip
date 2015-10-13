@@ -1,0 +1,16 @@
+.cadence/
+.cdsenv
+.cdsinit
+.cdsplotinit
+.simrc
+.simvision/
+.simvisionrc
+cds.lib
+display.drf
+hdl.var
+libManager.log
+libManager.log.cdslck
+menus/
+verilog_syntax_check.log
+xilinx_compile/
+xiltmp/

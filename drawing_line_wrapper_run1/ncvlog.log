@@ -1,0 +1,17 @@
+ncvlog(64): 12.10-s005: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	12.10-s005: Started on Oct 12, 2015 at 12:51:34 BST
+ncvlog
+    -messages
+    testfixture.template
+
+file: testfixture.template
+     "/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog"
+                                                                                    |
+ncvlog: *W,INCBRK (testfixture.template,34|84): `include and following file name not on same line [16.5(IEEE)].
+  process_draw_request();
+                       |
+ncvlog: *W,TMTPAR (/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog,22|23): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+(`include file: /home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog line 22, file: testfixture.template line 34)
+	module check.test
+		errors: 0, warnings: 2
+TOOL:	ncvlog(64)	12.10-s005: Exiting on Oct 12, 2015 at 12:51:34 BST  (total: 00:00:00)

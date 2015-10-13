@@ -1,0 +1,5 @@
+cellViewCounterTable = makeTable('cellViewCounterTableType nil)
+cellViewCounterTable['("COMP32211" "unit_1" "symbol" )] =  387
+cellViewCounterTable['("basic" "ipin" "symbol" )] =  22
+cellViewCounterTable['("COMP32211" "drawing_line_wrapper" "schematic" )] =  24346
+cellViewCounterTable['("basic" "opin" "symbol" )] =  22
