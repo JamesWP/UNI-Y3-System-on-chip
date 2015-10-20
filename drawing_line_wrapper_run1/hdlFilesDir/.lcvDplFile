@@ -1,14 +1,14 @@
 tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "symbol"
-    cellName "unit_4" libName "COMP32211"
+    cellName "unit_1" libName "COMP32211"
     ) 
     (nil viewType "schematicSymbol" viewName "symbol"
-    cellName "unit_2" libName "COMP32211"
+    cellName "unit_4" libName "COMP32211"
     ) 
     (nil viewType "schematicSymbol" viewName "symbol"
     cellName "unit_3" libName "COMP32211"
     ) 
     (nil viewType "schematicSymbol" viewName "symbol"
-    cellName "unit_1" libName "COMP32211"
+    cellName "unit_2" libName "COMP32211"
     )
 )
 xxxInternalGlobAliasList = '(nil)

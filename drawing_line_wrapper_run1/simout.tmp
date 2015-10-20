@@ -1,4 +1,4 @@
-TOOL:	ncxlmode	12.10-s005: Started on Oct 12, 2015 at 13:46:44 BST
+TOOL:	ncxlmode	12.10-s005: Started on Oct 13, 2015 at 16:56:46 BST
 ncxlmode
 	+delay_mode_path
 	+typdelays
@@ -22,9 +22,9 @@ ncxlmode
 	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
 	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -access +w  -access +c  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/10ps -nostdout -nocopyright"
 	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/.simTmpNCCmd "
-	+mpssession+virtuoso27200
-	+mpshost+E-C07KILF913.it.manchester.ac.uk
-Recompiling... reason: unable to stat '/./unit_1.vp'.
+	+mpssession+virtuoso19453
+	+mpshost+E-C07KILF933.it.manchester.ac.uk
+Recompiling... reason: unable to stat '/./unit_2.vp'.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
 		Caching library 'check' ....... Done
@@ -44,11 +44,11 @@ Recompiling... reason: unable to stat '/./unit_1.vp'.
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 4       4
-		Registers:              47      47
+		Registers:              50      50
 		Scalar wires:           14       -
 		Expanded wires:         40       4
 		Vectored wires:         12       -
-		Always blocks:           5       5
+		Always blocks:           8       8
 		Initial blocks:         15      15
 		Cont. assignments:       6      12
 		Pseudo assignments:     11      11
@@ -63,39 +63,52 @@ ncsim> database -open shmWave -shm -default -into shm.db
 Created default SHM database shmWave
 ncsim> probe -create -shm test  -all   -depth 1
 Created probe 1
-ncsim> probe -create -shm test.top.ack test.top.busy test.top.clk test.top.de_ack test.top.de_addr test.top.de_data test.top.de_nbyte test.top.de_req test.top.r0 test.top.r1 test.top.r2 test.top.r3 test.top.r4 test.top.r5 test.top.r6 test.top.r7 test.top.req
-Created probe 2
+ncsim> reset
+Loaded snapshot check.test:template
 ncsim> run
-[                   0] Test Start
-[               30000] Parameters Set
-[               31000] Waiting for ack
-[               50000] Got ack
-[               90000] Plot(x=322,y=  2,d=00000000,e=1011)
-[              130000] Plot complete
-[              170000] Plot(x=482,y=  2,d=00000000,e=0111)
-[              210000] Plot complete
-[              250000] Plot(x=  3,y=  3,d=00000000,e=1110)
-[              290000] Plot complete
-[              330000] Plot(x=163,y=  3,d=00000000,e=1101)
-[              370000] Plot complete
-[              410000] Plot(x=323,y=  3,d=00000000,e=1011)
-[              450000] Plot complete
-[              490000] Plot(x=483,y=  3,d=00000000,e=0111)
-[              530000] Plot complete
-[              570000] Plot(x=  4,y=  4,d=00000000,e=1110)
-[              610000] Plot complete
-[              650000] Plot(x=164,y=  4,d=00000000,e=1101)
-[              690000] Plot complete
-[              730000] Plot(x=324,y=  4,d=00000000,e=1011)
-[              770000] Plot complete
-[              810000] Plot(x=484,y=  4,d=00000000,e=0111)
-[              850000] Plot complete
-[              890000] Plot(x=  5,y=  5,d=00000000,e=1110)
-[              910000] Finished plotting
-Simulation stopped via $stop(1) at time 910 NS + 3
-ncsim> ^C
-ncsim> exit
+[  10] Test Signals
+[  12] Got Ack
+[  12] Stoped busy
+[  12] Test Complete
+[  13] Plot(x=  0,y=  0,d=ffffffff,e=1110)
+[  17] Plot(x=  0,y=  0,d=ffffffff,e=1101)
+[ 100] Test 1 Start
+[ 101] Parameters Set
+[ 101] Waiting for ack
+[ 102] Got ack
+[ 104] Plot(x=  0,y=  0,d=ffffffff,e=1110)
+[ 108] Plot(x=  0,y=  1,d=ffffffff,e=1101)
+[ 112] Plot(x=  0,y=  2,d=ffffffff,e=1011)
+[ 116] Plot(x=  0,y=  3,d=ffffffff,e=0111)
+[ 120] Plot(x=  4,y=  4,d=ffffffff,e=1110)
+[ 124] Plot(x=  4,y=  5,d=ffffffff,e=1101)
+[ 128] Plot(x=  4,y=  6,d=ffffffff,e=1011)
+[ 132] Plot(x=  4,y=  7,d=ffffffff,e=0111)
+[ 136] Plot(x=  8,y=  8,d=ffffffff,e=1110)
+[ 140] Plot(x=  8,y=  9,d=ffffffff,e=1101)
+[ 144] Plot(x=  8,y= 10,d=ffffffff,e=1011)
+[ 145] Finished plotting
+[ 200] Test 2 Start
+[ 201] Parameters Set
+[ 201] Waiting for ack
+[ 202] Got ack
+[ 204] Plot(x=  0,y=  0,d=4a4a4a4a,e=1110)
+[ 208] Plot(x=  0,y=  1,d=4a4a4a4a,e=1101)
+[ 212] Plot(x=  0,y=  2,d=4a4a4a4a,e=1011)
+[ 216] Plot(x=  0,y=  3,d=4a4a4a4a,e=0111)
+[ 220] Plot(x=  4,y=  4,d=4a4a4a4a,e=1110)
+[ 224] Plot(x=  4,y=  5,d=4a4a4a4a,e=1101)
+[ 228] Plot(x=  4,y=  6,d=4a4a4a4a,e=1011)
+[ 232] Plot(x=  4,y=  7,d=4a4a4a4a,e=0111)
+[ 236] Plot(x=  8,y=  8,d=4a4a4a4a,e=1110)
+[ 240] Plot(x=  8,y=  9,d=4a4a4a4a,e=1101)
+[ 244] Plot(x=  8,y= 10,d=4a4a4a4a,e=1011)
+[ 245] Finished plotting
+Simulation stopped via $stop(1) at time 5990 NS + 0
+ncsim> ...Regained control from SimVision
+-------------------------------------
 
+ncsim> 
 coverage setup:
   workdir  :  ./cov_work
   dutinst  :  test(test)
@@ -104,6 +117,6 @@ coverage setup:
   testname :  test
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_66e33369_00000000.ucm (reused)
-  data               :  ./cov_work/scope/test/icc_66e33369_00000000.ucd
-TOOL:	ncxlmode	12.10-s005: Exiting on Oct 12, 2015 at 13:58:25 BST  (total: 00:11:41)
+  model(design data) :  ./cov_work/scope/icc_5ce58eb1_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_5ce58eb1_00000000.ucd
+TOOL:	ncxlmode	12.10-s005: Exiting on Oct 13, 2015 at 16:57:39 BST  (total: 00:00:53)

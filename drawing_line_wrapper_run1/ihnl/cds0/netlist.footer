@@ -1,4 +1,4 @@
-unit_1 drawing_line ( clk, req, ack, busy, r0[15:0], r1[15:0],
+unit_2 drawing_line ( clk, req, ack, busy, r0[15:0], r1[15:0],
      r2[15:0], r3[15:0], r4[15:0], r5[15:0], r6[15:0], r7[15:0],
      de_req, de_ack, de_addr[17:0], de_nbyte[3:0], de_data[31:0]);
 
