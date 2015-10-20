@@ -15,8 +15,8 @@
 "+ncvlogargs+ -neverwarn -nostdout -nocopyright "
 "+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -access +w  -access +c  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/10ps -nostdout -nocopyright"
 "+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/.simTmpNCCmd "
-+mpssession+virtuoso19453
-+mpshost+E-C07KILF933.it.manchester.ac.uk
++mpssession+virtuoso18885
++mpshost+E-C07KILF914.it.manchester.ac.uk
 -COVOVERWRITE
 -NOSTDOUT
 -NOCOPYRIGHT
@@ -26,14 +26,14 @@
 -input
 /home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/.simTmpNCCmd
 -MPSSESSION
-virtuoso19453
+virtuoso18885
 -MPSHOST
-E-C07KILF933.it.manchester.ac.uk
+E-C07KILF914.it.manchester.ac.uk
 -MESSAGES
 +EMGRLOG
 simout.tmp
 -XLSTIME
-1444751806
+1445341868
 -XLKEEP
 -XLMODE
 ./INCA_libs/irun.lnx8664.12.10.nc
@@ -47,4 +47,4 @@ ncxlmode
 -XLVERSION
 "TOOL:	ncxlmode	12.10-s005"
 -XLNAME
-./INCA_libs/irun.lnx8664.12.10.nc/E-C07KILF933.it.manchester.ac.uk_21423
+./INCA_libs/irun.lnx8664.12.10.nc/E-C07KILF914.it.manchester.ac.uk_23085

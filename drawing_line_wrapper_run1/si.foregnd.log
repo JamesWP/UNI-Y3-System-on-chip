@@ -573,7 +573,7 @@ si: simSetDef().... hnlVerilogTriregbusList is initialized to "nil".
 si: simSetDef().... hnlVerilogPartialNet is initialized to "nil".
 si: simSetDef().... hnlVerilogTriregStrengthList is initialized to "nil".
 Loading the file
-'/local/cds_root/IC615/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Oct 13 16:02:53 2015
+'/local/cds_root/IC615/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Oct 20 10:44:23 2015
 si: simSetDef().... hnlMaxLineLength is initialized to 72 .
 si: simSetDef().... hnlInvalidNames is initialized to (("always" "always_")
 ("and" "and_") ("assign" "assign_") ("begin" "begin_") ("buf" "buf_") ("bufif0"
@@ -817,368 +817,17 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:02:53 2015
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:21:38 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:21:38 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:22:41 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:22:41 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:24:10 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:24:10 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:27:26 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:27:26 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:34:21 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_2/symbol', was not used in
-the last netlisting session in this
-current run directory. Therefore,
-re-netlisting all cell views where this
-primitive is instantiated.
-
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
 unit_2                      symbol               *Stopping View*  
-drawing_line_wrapper        schematic                             
 
 ---------- End of netlist configuration information   ----------
 INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
 view 'schematic' has been netlisted successfully.
 
-End netlisting Oct 13 16:34:22 2015
+End netlisting Oct 20 10:44:23 2015
 *** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
 
 Running netlist
-Begin Incremental Netlisting Oct 13 16:37:04 2015
+Begin Incremental Netlisting Oct 20 10:54:13 2015
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -1238,17 +887,568 @@ CELL NAME                   VIEW NAME            NOTE
 ---------                   ---------            ----             
 
 unit_2                      symbol               *Stopping View*  
-drawing_line_wrapper        schematic                             
 
 ---------- End of netlist configuration information   ----------
 INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
 view 'schematic' has been netlisted successfully.
 
-End netlisting Oct 13 16:37:04 2015
+End netlisting Oct 20 10:54:13 2015
 *** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
 
 Running netlist
-Begin Incremental Netlisting Oct 13 16:37:58 2015
+Begin Incremental Netlisting Oct 20 10:54:32 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 10:54:32 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 10:57:40 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 10:57:40 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:00:59 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:00:59 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:13:57 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:13:57 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:16:34 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:16:34 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:18:19 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:18:19 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:26:34 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:26:34 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:27:54 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:27:54 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:32:38 2015
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -1320,10 +1520,11 @@ drawing_line_wrapper        schematic
 INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
 view 'schematic' has been netlisted successfully.
 
-End netlisting Oct 13 16:37:58 2015
+End netlisting Oct 20 11:32:38 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
 
 Running netlist
-Begin Incremental Netlisting Oct 13 16:37:59 2015
+Begin Incremental Netlisting Oct 20 11:32:46 2015
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -1388,11 +1589,11 @@ unit_3                      symbol               *Stopping View*
 INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
 view 'schematic' has been netlisted successfully.
 
-End netlisting Oct 13 16:37:59 2015
+End netlisting Oct 20 11:32:46 2015
 *** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
 
 Running netlist
-Begin Incremental Netlisting Oct 13 16:41:50 2015
+Begin Incremental Netlisting Oct 20 11:36:13 2015
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -1439,76 +1640,7 @@ pins with initial state of "0", set
 hnlVerilogIOInitStimulusStr = "0" 
 either in CIW or the .simrc file.
  
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_3                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:41:50 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:42:28 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_1/symbol', was not used in
+WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_4/symbol', was not used in
 the last netlisting session in this
 current run directory. Therefore,
 re-netlisting all cell views where this
@@ -1526,156 +1658,18 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-unit_1                      symbol               *Stopping View*  
+unit_4                      symbol               *Stopping View*  
 drawing_line_wrapper        schematic                             
 
 ---------- End of netlist configuration information   ----------
 INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
 view 'schematic' has been netlisted successfully.
 
-End netlisting Oct 13 16:42:28 2015
+End netlisting Oct 20 11:36:13 2015
 *** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
 
 Running netlist
-Begin Incremental Netlisting Oct 13 16:45:16 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:45:16 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:54:13 2015
-si: simSetDef().... hnlCapability is initialized to "nil".
-si: simSetDef().... hnlBusCapability is initialized to "nil".
-INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
-the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
-Master'.
-Alternatively, you can set the hnlVerilogTermSyncUp variable as
-'honorSM'.
-This option automatically resolves any mismatch between the terminals
-of an instance and its switch master while generating an implicit netlist.
-
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
-
-"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
-
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
-
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating
-instance ports. To prevent 
-them from being printed, set
-simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
-Configuration list. 
-If you want to print only those cellviews that need to be
-re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either
-in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
-have split busses 
-across module ports you may get an incorrect netlist. To
-print module ports 
-with the port ranges, set simVerilogDropPortRange = nil
-either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
-"z". To get inout 
-pins with initial state of "0", set
-hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
-stopping cells.
-
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information
-----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-unit_1                      symbol               *Stopping View*  
-
----------- End of netlist configuration information   ----------
-INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
-view 'schematic' has been netlisted successfully.
-
-End netlisting Oct 13 16:54:13 2015
-*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
-
-Running netlist
-Begin Incremental Netlisting Oct 13 16:56:45 2015
+Begin Incremental Netlisting Oct 20 11:39:51 2015
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -1747,4 +1741,1102 @@ drawing_line_wrapper        schematic
 INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
 view 'schematic' has been netlisted successfully.
 
-End netlisting Oct 13 16:56:45 2015
+End netlisting Oct 20 11:39:51 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:47:14 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:47:14 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:48:17 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+ERROR (OSSHNL-109): The cell view, 'COMP32211/drawing_line_wrapper/schematic',
+has been modified since the last extraction.
+Re-extract the design (File->Check
+and Save menu option) for schematic cell
+views to correct this error.
+
+End netlisting Oct 20 11:48:17 2015
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:48:58 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+ERROR (OSSHNL-109): The cell view, 'COMP32211/drawing_line_wrapper/schematic',
+has been modified since the last extraction.
+Re-extract the design (File->Check
+and Save menu option) for schematic cell
+views to correct this error.
+
+End netlisting Oct 20 11:48:58 2015
+
+Running netlist
+Begin Incremental Netlisting Oct 20 11:49:05 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_4/symbol', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+drawing_line_wrapper        schematic                             
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 11:49:05 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:01:48 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:01:48 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:02:34 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:02:34 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:04:09 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:04:09 2015
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:05:25 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:05:25 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:14:12 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_2/symbol', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+drawing_line_wrapper        schematic                             
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:14:12 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:37:02 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_2                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:37:02 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:38:02 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+ERROR (OSSHNL-109): The cell view, 'COMP32211/drawing_line_wrapper/schematic',
+has been modified since the last extraction.
+Re-extract the design (File->Check
+and Save menu option) for schematic cell
+views to correct this error.
+
+End netlisting Oct 20 12:38:02 2015
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:38:08 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_4/symbol', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+drawing_line_wrapper        schematic                             
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:38:08 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:44:14 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_5/symbol', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_5                      symbol               *Stopping View*  
+drawing_line_wrapper        schematic                             
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:44:15 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:50:16 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_5                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:50:16 2015
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:50:18 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_5                      symbol               *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:50:18 2015
+*** Loading .simrc from -> /home/mbax3jp2/Cadence/COMP32211/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Oct 20 12:51:01 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/mbax3jp2/Cadence/COMP32211/drawing_line_wrapper_run1/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-160): The primitive, 'COMP32211/unit_4/symbol', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+unit_4                      symbol               *Stopping View*  
+drawing_line_wrapper        schematic                             
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'COMP32211', cell 'drawing_line_wrapper', and
+view 'schematic' has been netlisted successfully.
+
+End netlisting Oct 20 12:51:01 2015

@@ -1,5 +1,5 @@
 ncvlog(64): 12.10-s005: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
-TOOL:	ncvlog(64)	12.10-s005: Started on Oct 13, 2015 at 16:20:41 BST
+TOOL:	ncvlog(64)	12.10-s005: Started on Oct 20, 2015 at 10:54:15 BST
 ncvlog
     -messages
     testfixture.template
@@ -10,4 +10,4 @@ file: testfixture.template
 ncvlog: *W,INCBRK (testfixture.template,34|84): `include and following file name not on same line [16.5(IEEE)].
 	module check.test
 		errors: 0, warnings: 1
-TOOL:	ncvlog(64)	12.10-s005: Exiting on Oct 13, 2015 at 16:20:41 BST  (total: 00:00:00)
+TOOL:	ncvlog(64)	12.10-s005: Exiting on Oct 20, 2015 at 10:54:15 BST  (total: 00:00:00)

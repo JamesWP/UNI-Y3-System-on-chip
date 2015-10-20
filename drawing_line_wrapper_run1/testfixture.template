@@ -8,18 +8,18 @@ wire  ack, busy, de_req;
 
 reg  clk, de_ack, req;
 
-wire [31:0]  de_data;
 wire [3:0]  de_nbyte;
 wire [17:0]  de_addr;
+wire [31:0]  de_data;
 
-reg [15:0]  r3;
-reg [15:0]  r7;
-reg [15:0]  r2;
 reg [15:0]  r5;
 reg [15:0]  r4;
 reg [15:0]  r1;
-reg [15:0]  r6;
 reg [15:0]  r0;
+reg [15:0]  r7;
+reg [15:0]  r6;
+reg [15:0]  r3;
+reg [15:0]  r2;
 
 
 
