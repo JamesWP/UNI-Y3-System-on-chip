@@ -1,3 +1,5 @@
+// James Peach
+// test module stimulus.v
 
 // Verilog stimulus file.
 // Please do not create a module in this file.
@@ -26,39 +28,48 @@ begin
     process_draw_request;
 end
 
+// if error occurs stop simulation
 always @(posedge error)
 begin
   $display("[%4d] Error occured", clkNo);
   #100 $finish;
 end
 
+// log a request to the module to draw line
 always @(posedge clk)
 begin
   if(ack)
   begin
     $display("[%4d] Test Line Start (%3d,%3d)->(%3d,%3d)",clkNo, 
       r0, r1, r2, r3, r6);
-    @(negedge ack);
+    @(negedge ack); // wait for ack to remove (avoid printing twice)
   end
 end
 
+// run tests at appropiate times
 always @(posedge clk)
 case (clkNo)
+// test simple two pixel line
+// test ack and busy lines
   10: testSignals;
-
+// test one simple color line
   100: test1;
-  
+// test another color line
   200: test2;
-  
+// test changing data half though plot
   300: test3;
-
-  400: test_line(010,010,200,010,8'b111_111_11);
-
-  500: test_line(010,010,100,020,8'b111_111_11);
-
+// test simple horiz line
+  400: test_line(010,010,020,010,8'b111_111_11);
+// test simple vertical lign
+  500: test_line(010,010,010,020,8'b111_111_11);
+// test reverse line (start low, move up)
   600: test_line(010,010,000,000,8'b111_111_11);
-
-  700: test_line(000,000,639,479,8'b111_111_11);
+// test just-off vertical line
+  700: test_line(000,000,015,050,8'b111_111_11);
+// test just-off horizontal line
+  900: test_line(000,000,050,015,8'b111_111_11);
+// test long whole-screen line
+  1100:test_line(000,000,639,479,8'b111_111_11);
  
   10000: $finish;
 endcase
@@ -202,10 +213,11 @@ begin
   
   @(posedge clk)
 
+  #100 
   r1 = 14;
   r2 = 14; 
   r6 = 0;
- 
+
   $display("[%4d] Changed data",clkNo);
   
   // wait for module to not be busy

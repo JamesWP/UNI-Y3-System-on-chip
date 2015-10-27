@@ -5,12 +5,12 @@
 #
 LockStakeVersion               1.1
 LoginName                      mbax3jp2
-HostName                       E-C07KILF914.it.manchester.ac.uk
-ProcessIdentifier              18885
-ProcessCreationTime_UTC        1445334014
-ProcessCreationTime_Readable   Tue Oct 20 10:40:14 2015 BST
+HostName                       E-C07KILF934.it.manchester.ac.uk
+ProcessIdentifier              25914
+ProcessCreationTime_UTC        1445958885
+ProcessCreationTime_Readable   Tue Oct 27 15:14:45 2015 GMT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         /home/mbax3jp2/Cadence/COMP32211/COMP32211/drawing_line_wrapper/schematic/sch.oa.cdslck.dirlck
-TimeEditLocked                 Tue Oct 20 10:42:58 2015 BST
+TimeEditLocked                 Tue Oct 27 15:15:04 2015 GMT
