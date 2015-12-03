@@ -60,16 +60,18 @@ case (clkNo)
   300: test3;
 // test simple horiz line
   400: test_line(010,010,020,010,8'b111_111_11);
+// test simple horiz line
+  500: test_line(000,000,700,500,8'b111_111_11);
 // test simple vertical lign
-  500: test_line(010,010,010,020,8'b111_111_11);
+  3350: test_line(010,010,010,020,8'b111_111_11);
 // test reverse line (start low, move up)
-  600: test_line(010,010,000,000,8'b111_111_11);
+  4000: test_line(010,010,000,000,8'b111_111_11);
 // test just-off vertical line
-  700: test_line(000,000,015,050,8'b111_111_11);
+  5000: test_line(000,000,015,050,8'b111_111_11);
 // test just-off horizontal line
-  900: test_line(000,000,050,015,8'b111_111_11);
+  6000: test_line(000,000,050,015,8'b111_111_11);
 // test long whole-screen line
-  1100:test_line(000,000,639,479,8'b111_111_11);
+  7000: test_line(000,000,639,479,8'b111_111_11);
  
   10000: $finish;
 endcase
@@ -87,7 +89,8 @@ begin
   r2 = 1;
   r3 = 0;
   r6 = 8'b111_111_11;
-  #1 req = 1;
+  de_ack = 0;
+  #10 req = 1;
 
   @(posedge clk);
 
@@ -323,6 +326,8 @@ end
 endtask
 
 
+reg [17:0] de_addr_tmp;
+reg [31:0] de_data_tmp;
 // listens to the module and takes one request to draw
 // this will also simulate a memory cycle after the request
 // is accepted before returning to accept another request
@@ -330,10 +335,18 @@ task process_draw_request;
 begin
   // then on the next clock cycle...
   @(posedge clk)
+  
+  de_addr_tmp = de_addr;
+  de_data_tmp = de_data; 
+
   $display("[%4d] Plot(x=%3d,y=%3d,d=%x,e=%b)",clkNo,(de_addr%160)*4,de_addr/160,de_data,de_nbyte);
   #1 de_ack = 1;
   // for one clock
   @(posedge clk)
+
+  if(de_addr_tmp != de_addr) error=1;
+  if(de_data_tmp != de_data) error=1;
+
   #1 de_ack = 0;
   // await one cycle to simulate memory bus delay
   @(posedge clk);
