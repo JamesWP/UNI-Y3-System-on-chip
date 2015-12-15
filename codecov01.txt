@@ -1,0 +1,9 @@
+drawing_jp_rect
+
+  block         =  35/41
+  expression    =   6/6
+  toggle        = 147/440
+
+
+reasons for untested blocks and toggles are unused wires on inputs
+default conditions are not taken (as no undefines used in testing)
