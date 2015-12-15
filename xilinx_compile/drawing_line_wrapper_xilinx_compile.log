@@ -1,0 +1,1346 @@
+REPORT LOG FILE FOR CELL drawing_line_wrapper on Dec 15 16:40:25 2015
+WORKING DIRECTORY IS /home/mbax3jp2/Cadence/COMP32211/xilinx_compile 
+Removing pins from design drawing_line_wrapper
+REMOVING TEMP WITH /bin/rm -r xiltmp/drawing_line_wrapper
+dated connectivity.
+processing drawing_line_wrapper...
+Writing cell drawing_jp_rect...
+Writing cell drawing_line_wrapper...
+XILINX PART IS xc3s200-ft256-4
+Design is drawing_line_wrapper
+INC_DESIGN IS drawing_jp_rect
+XILINX PART IS xc3s200-ft256-4
+Design is drawing_jp_rect
+removing drawing_jp_rect.ngc
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "drawing_jp_rect_xst_incfiles"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "drawing_jp_rect.ngc"
+Output Format                      : NGC
+Target Device                      : xc3s200-ft256-4
+
+---- Source Options
+Top Module Name                    : drawing_jp_rect
+Signal Encoding Algorithm          : user
+FSM Encoding Algorithm             : user
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+Setting FSM Encoding Algorithm to : user
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "/home/mbax3jp2/Cadence/COMP32211/COMP32211/drawing_jp_rect/functional/verilog.v" in library work
+Module <drawing_jp_rect> compiled
+No errors in compilation
+Analysis of file <"drawing_jp_rect_xst_incfiles"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <drawing_jp_rect>.
+Module <drawing_jp_rect> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <drawing_jp_rect>.
+    Related source file is "/home/mbax3jp2/Cadence/COMP32211/COMP32211/drawing_jp_rect/functional/verilog.v".
+WARNING:Xst:647 - Input <de_r_data> is never used.
+WARNING:Xst:646 - Signal <colx> is assigned but never used.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | user                                           |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 4x4-bit ROM for signal <$n0027> created at line 219.
+    Found 18-bit adder for signal <de_addr>.
+    Found 10-bit subtractor for signal <$n0002> created at line 190.
+    Found 16-bit subtractor for signal <$n0016> created at line 191.
+    Found 3-bit adder for signal <$n0017> created at line 188.
+    Found 18-bit adder for signal <$n0018>.
+    Found 8-bit comparator greater for signal <$n0020> created at line 183.
+    Found 16-bit comparator greater for signal <$n0021> created at line 184.
+    Found 8-bit comparator greater for signal <$n0022> created at line 188.
+    Found 4-bit shifter logical left for signal <$n0028> created at line 226.
+    Found 16-bit subtractor for signal <coloffset>.
+    Found 16-bit register for signal <colourPalet>.
+    Found 16-bit adder for signal <curY>.
+    Found 8-bit register for signal <height>.
+    Found 16-bit adder for signal <nextStartx>.
+    Found 16-bit 4-to-1 multiplexer for signal <patternReg>.
+    Found 64-bit register for signal <patternRegBank>.
+    Found 16-bit register for signal <remHeight>.
+    Found 16-bit comparator greater for signal <rows_to_draw>.
+    Found 16-bit register for signal <startx>.
+    Found 16-bit register for signal <starty>.
+    Found 8-bit register for signal <width>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred 144 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <drawing_jp_rect> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 8
+ 10-bit subtractor                                     : 1
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 2
+ 18-bit adder                                          : 2
+ 3-bit adder                                           : 1
+# Registers                                            : 11
+ 16-bit register                                       : 7
+ 8-bit register                                        : 4
+# Comparators                                          : 4
+ 16-bit comparator greater                             : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 1
+ 4-bit shifter logical left                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Optimizing FSM <state> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 8
+ 10-bit subtractor                                     : 1
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 2
+ 18-bit adder                                          : 2
+ 3-bit adder                                           : 1
+# Registers                                            : 147
+ Flip-Flops                                            : 147
+# Comparators                                          : 4
+ 16-bit comparator greater                             : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 1
+ 4-bit shifter logical left                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s200.nph' in environment /opt/cadtools5/ise8.1i.
+WARNING:Xst:1291 - FF/Latch <starty_13> is unconnected in block <drawing_jp_rect>.
+WARNING:Xst:1291 - FF/Latch <starty_14> is unconnected in block <drawing_jp_rect>.
+WARNING:Xst:1291 - FF/Latch <starty_15> is unconnected in block <drawing_jp_rect>.
+
+Optimizing unit <drawing_jp_rect> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : drawing_jp_rect.ngc
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 221
+
+Cell Usage :
+# BELS                             : 439
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 17
+#      LUT1_L                      : 1
+#      LUT2                        : 36
+#      LUT2_L                      : 22
+#      LUT3                        : 68
+#      LUT3_L                      : 4
+#      LUT4                        : 68
+#      LUT4_D                      : 11
+#      LUT4_L                      : 20
+#      MUXCY                       : 75
+#      MUXF5                       : 21
+#      VCC                         : 1
+#      XORCY                       : 73
+# FlipFlops/Latches                : 144
+#      FD                          : 11
+#      FDE                         : 101
+#      FDS                         : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                     156  out of   1920     8%  
+ Number of Slice Flip Flops:           144  out of   3840     3%  
+ Number of 4 input LUTs:               247  out of   3840     6%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE                   | 144   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.722ns (Maximum Frequency: 67.926MHz)
+   Minimum input arrival time before clock: 6.199ns
+   Maximum output required time after clock: 14.591ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.722ns (frequency: 67.926MHz)
+  Total number of paths / destination ports: 32105 / 176
+-------------------------------------------------------------------------
+Delay:               14.722ns (Levels of Logic = 20)
+  Source:            remHeight_0 (FF)
+  Destination:       startx_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: remHeight_0 to startx_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.720   1.216  remHeight_0 (remHeight_0)
+     LUT1_L:I0->LO         1   0.551   0.000  remHeight_0_rt (remHeight_0_rt)
+     MUXCY:S->O            1   0.500   0.000  drawing_jp_rect_nextRemHeight<0>cy (drawing_jp_rect_nextRemHeight<0>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<1>cy (drawing_jp_rect_nextRemHeight<1>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<2>cy (drawing_jp_rect_nextRemHeight<2>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<3>cy (drawing_jp_rect_nextRemHeight<3>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<4>cy (drawing_jp_rect_nextRemHeight<4>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<5>cy (drawing_jp_rect_nextRemHeight<5>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<6>cy (drawing_jp_rect_nextRemHeight<6>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<7>cy (drawing_jp_rect_nextRemHeight<7>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<8>cy (drawing_jp_rect_nextRemHeight<8>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<9>cy (drawing_jp_rect_nextRemHeight<9>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<10>cy (drawing_jp_rect_nextRemHeight<10>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect_nextRemHeight<11>cy (drawing_jp_rect_nextRemHeight<11>_cyo)
+     XORCY:CI->O           3   0.904   1.246  drawing_jp_rect_nextRemHeight<12>_xor (nextRemHeight<12>)
+     LUT4_L:I0->LO         1   0.551   0.000  Mcompar_rows_to_draw_norlut3 (N56)
+     MUXCY:S->O           17   0.739   1.684  Mcompar_rows_to_draw_norcy_rn_2 (Mcompar_rows_to_draw_nor_cyo3)
+     LUT4_L:I0->LO         1   0.551   0.000  last_col217_SW11_F (N343)
+     MUXF5:I0->O           3   0.360   0.933  last_col217_SW11 (N315)
+     LUT4_D:I3->O          7   0.551   1.134  Ker41_2 (Ker411)
+     LUT4:I2->O            1   0.551   0.801  _n0013<9>_SW0 (N179)
+     FDS:S                     1.026          startx_9
+    ----------------------------------------
+    Total                     14.722ns (7.708ns logic, 7.014ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 400 / 276
+-------------------------------------------------------------------------
+Offset:              6.199ns (Levels of Logic = 3)
+  Source:            de_ack (PAD)
+  Destination:       startx_9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: de_ack to startx_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            3   0.551   1.246  last_col217_SW2 (N316)
+     LUT4_D:I0->O          7   0.551   1.134  Ker41_2 (Ker411)
+     LUT4:I2->O            1   0.551   0.801  _n0013<9>_SW0 (N179)
+     FDS:S                     1.026          startx_9
+    ----------------------------------------
+    Total                      6.199ns (3.018ns logic, 3.181ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 28220 / 57
+-------------------------------------------------------------------------
+Offset:              14.591ns (Levels of Logic = 18)
+  Source:            remHeight_0 (FF)
+  Destination:       de_addr<17> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: remHeight_0 to de_addr<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.720   1.216  remHeight_0 (remHeight_0)
+     LUT1_L:I0->LO         1   0.551   0.000  remHeight_0_rt (remHeight_0_rt)
+     MUXCY:S->O            1   0.500   0.000  drawing_jp_rect_nextRemHeight<0>cy (drawing_jp_rect_nextRemHeight<0>_cyo)
+     XORCY:CI->O           3   0.904   1.102  drawing_jp_rect_nextRemHeight<1>_xor (nextRemHeight<1>)
+     LUT2:I1->O            1   0.551   0.000  drawing_jp_rect_curY<1>lut (N38)
+     MUXCY:S->O            1   0.500   0.000  drawing_jp_rect_curY<1>cy (drawing_jp_rect_curY<1>_cyo)
+     XORCY:CI->O          35   0.904   2.209  drawing_jp_rect_curY<2>_xor (curY<2>)
+     LUT2:I0->O            1   0.551   0.000  drawing_jp_rect__n0018<9>lut (N60)
+     MUXCY:S->O            1   0.500   0.000  drawing_jp_rect__n0018<9>cy (drawing_jp_rect__n0018<9>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect__n0018<10>cy (drawing_jp_rect__n0018<10>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect__n0018<11>cy (drawing_jp_rect__n0018<11>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect__n0018<12>cy (drawing_jp_rect__n0018<12>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect__n0018<13>cy (drawing_jp_rect__n0018<13>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect__n0018<14>cy (drawing_jp_rect__n0018<14>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  drawing_jp_rect__n0018<15>cy (drawing_jp_rect__n0018<15>_cyo)
+     XORCY:CI->O           1   0.904   1.140  drawing_jp_rect__n0018<16>_xor (_n0018<16>)
+     LUT1:I0->O            1   0.551   0.000  _n0018<16>_rt (_n0018<16>_rt)
+     MUXCY:S->O            0   0.500   0.000  drawing_jp_rect_de_addr<16>cy (drawing_jp_rect_de_addr<16>_cyo)
+     XORCY:CI->O           0   0.904   0.000  drawing_jp_rect_de_addr<17>_xor (de_addr<17>)
+    ----------------------------------------
+    Total                     14.591ns (8.924ns logic, 5.667ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+CPU : 2.19 / 2.19 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+
+
+Total memory usage is 91700 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
+XILINX PART IS xc3s200-ft256-4
+Design is drawing_line_wrapper
+Release 8.1i - ngdbuild I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -sd /tmp -dd _ngo -aul -nt timestamp -p xc3s200-ft256-4
+drawing_line_wrapper 
+
+Executing edif2ngd -aul "drawing_line_wrapper.edn"
+"_ngo/drawing_line_wrapper.ngo"
+Release 8.1i - edif2ngd I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 8.1i edif2ngd I.24
+INFO:NgdBuild - Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+Adding pads to all top level port signals...
+Writing module to "_ngo/drawing_line_wrapper.ngo"...
+Reading NGO file
+'/home/mbax3jp2/Cadence/COMP32211/xilinx_compile/_ngo/drawing_line_wrapper.ngo'
+...
+Loading design module
+"/home/mbax3jp2/Cadence/COMP32211/xilinx_compile/drawing_jp_rect.ngc"...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'r2<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r4<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'clk' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r2<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'de_ack' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r6<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r0<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r5<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'r1<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'r7<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'req' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'net03<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'r3<15>' has no driver
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 163
+
+Writing NGD file "drawing_line_wrapper.ngd" ...
+
+Writing NGDBUILD log file "drawing_line_wrapper.bld"...
+
+NGDBUILD done.
+Release 8.1i - Map I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Writing file drawing_line_wrapper.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Writing design file "drawing_line_wrapper.ncd"...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  180
+Logic Utilization:
+  Number of Slice Flip Flops:         144 out of   3,840    3%
+  Number of 4 input LUTs:             250 out of   3,840    6%
+Logic Distribution:
+  Number of occupied Slices:                          202 out of   1,920   10%
+    Number of Slices containing only related logic:     202 out of     202  100%
+    Number of Slices containing unrelated logic:          0 out of     202    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:            268 out of   3,840    6%
+  Number used as logic:                250
+  Number used as a route-thru:          18
+
+Total equivalent gate count for design:  3,159
+Peak Memory Usage:  129 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "drawing_line_wrapper.mrp" for details.
+Release 8.1i - par I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+
+
+Constraints file: drawing_line_wrapper.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment /opt/cadtools5/ise8.1i.
+   "drawing_line_wrapper" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.37 2005-11-04".
+
+
+Device Utilization Summary:
+
+   Number of Slices                  202 out of 1920   10%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+WARNING:Par:276 - The signal de_data<16> has no load
+WARNING:Par:276 - The signal de_data<24> has no load
+WARNING:Par:276 - The signal de_data<17> has no load
+WARNING:Par:276 - The signal de_data<25> has no load
+WARNING:Par:276 - The signal de_nbyte<3> has no load
+WARNING:Par:275 - The signal clk has no driver
+WARNING:Par:275 - The signal de_ack has no driver
+WARNING:Par:276 - The signal de_data<18> has no load
+WARNING:Par:276 - The signal de_data<26> has no load
+WARNING:Par:276 - The signal de_data<19> has no load
+WARNING:Par:276 - The signal de_data<27> has no load
+WARNING:Par:276 - The signal de_data<20> has no load
+WARNING:Par:276 - The signal de_data<28> has no load
+WARNING:Par:276 - The signal de_data<21> has no load
+WARNING:Par:276 - The signal de_data<29> has no load
+WARNING:Par:276 - The signal de_data<22> has no load
+WARNING:Par:276 - The signal de_data<30> has no load
+WARNING:Par:276 - The signal de_data<23> has no load
+WARNING:Par:276 - The signal de_data<31> has no load
+WARNING:Par:276 - The signal busy has no load
+WARNING:Par:276 - The signal de_data<0> has no load
+WARNING:Par:276 - The signal de_data<8> has no load
+WARNING:Par:276 - The signal de_data<1> has no load
+WARNING:Par:276 - The signal de_data<9> has no load
+WARNING:Par:276 - The signal de_data<2> has no load
+WARNING:Par:276 - The signal de_data<10> has no load
+WARNING:Par:276 - The signal de_data<3> has no load
+WARNING:Par:276 - The signal de_data<11> has no load
+WARNING:Par:276 - The signal de_data<4> has no load
+WARNING:Par:276 - The signal de_data<12> has no load
+WARNING:Par:276 - The signal de_data<5> has no load
+WARNING:Par:276 - The signal de_data<13> has no load
+WARNING:Par:276 - The signal de_data<6> has no load
+WARNING:Par:276 - The signal de_data<14> has no load
+WARNING:Par:276 - The signal de_data<7> has no load
+WARNING:Par:276 - The signal de_data<15> has no load
+WARNING:Par:275 - The signal r3<9> has no driver
+WARNING:Par:275 - The signal r3<8> has no driver
+WARNING:Par:275 - The signal r3<11> has no driver
+WARNING:Par:275 - The signal r3<10> has no driver
+WARNING:Par:275 - The signal r3<13> has no driver
+WARNING:Par:275 - The signal r3<12> has no driver
+WARNING:Par:275 - The signal r3<1> has no driver
+WARNING:Par:275 - The signal r3<0> has no driver
+WARNING:Par:275 - The signal r3<15> has no driver
+WARNING:Par:275 - The signal r3<14> has no driver
+WARNING:Par:275 - The signal r3<3> has no driver
+WARNING:Par:275 - The signal r3<2> has no driver
+WARNING:Par:275 - The signal r3<5> has no driver
+WARNING:Par:275 - The signal r3<4> has no driver
+WARNING:Par:275 - The signal r3<7> has no driver
+WARNING:Par:275 - The signal r3<6> has no driver
+WARNING:Par:275 - The signal r1<1> has no driver
+WARNING:Par:275 - The signal r1<0> has no driver
+WARNING:Par:275 - The signal r1<3> has no driver
+WARNING:Par:275 - The signal r1<2> has no driver
+WARNING:Par:275 - The signal r1<5> has no driver
+WARNING:Par:275 - The signal r1<4> has no driver
+WARNING:Par:275 - The signal r1<7> has no driver
+WARNING:Par:275 - The signal r1<6> has no driver
+WARNING:Par:275 - The signal r1<9> has no driver
+WARNING:Par:275 - The signal r1<8> has no driver
+WARNING:Par:276 - The signal de_nbyte<2> has no load
+WARNING:Par:275 - The signal req has no driver
+WARNING:Par:275 - The signal r2<11> has no driver
+WARNING:Par:275 - The signal r0<2> has no driver
+WARNING:Par:275 - The signal r0<10> has no driver
+WARNING:Par:275 - The signal r0<9> has no driver
+WARNING:Par:275 - The signal r0<11> has no driver
+WARNING:Par:275 - The signal r0<14> has no driver
+WARNING:Par:275 - The signal r0<12> has no driver
+WARNING:Par:275 - The signal r4<11> has no driver
+WARNING:Par:275 - The signal r4<10> has no driver
+WARNING:Par:275 - The signal r4<13> has no driver
+WARNING:Par:275 - The signal r4<12> has no driver
+WARNING:Par:275 - The signal r4<15> has no driver
+WARNING:Par:275 - The signal r4<14> has no driver
+WARNING:Par:275 - The signal r0<15> has no driver
+WARNING:Par:275 - The signal r5<11> has no driver
+WARNING:Par:275 - The signal r5<10> has no driver
+WARNING:Par:275 - The signal r5<13> has no driver
+WARNING:Par:275 - The signal r5<12> has no driver
+WARNING:Par:275 - The signal r5<15> has no driver
+WARNING:Par:275 - The signal r5<14> has no driver
+WARNING:Par:275 - The signal r6<11> has no driver
+WARNING:Par:275 - The signal r6<10> has no driver
+WARNING:Par:275 - The signal r6<13> has no driver
+WARNING:Par:275 - The signal r6<12> has no driver
+WARNING:Par:275 - The signal r6<15> has no driver
+WARNING:Par:275 - The signal r6<14> has no driver
+WARNING:Par:275 - The signal r7<11> has no driver
+WARNING:Par:275 - The signal r7<10> has no driver
+WARNING:Par:275 - The signal r7<13> has no driver
+WARNING:Par:275 - The signal r7<12> has no driver
+WARNING:Par:275 - The signal r7<15> has no driver
+WARNING:Par:275 - The signal r7<14> has no driver
+WARNING:Par:275 - The signal r4<1> has no driver
+WARNING:Par:275 - The signal r4<0> has no driver
+WARNING:Par:275 - The signal r4<3> has no driver
+WARNING:Par:275 - The signal r4<2> has no driver
+WARNING:Par:275 - The signal r5<1> has no driver
+WARNING:Par:275 - The signal r5<0> has no driver
+WARNING:Par:275 - The signal r4<5> has no driver
+WARNING:Par:275 - The signal r4<4> has no driver
+WARNING:Par:275 - The signal r5<3> has no driver
+WARNING:Par:275 - The signal r5<2> has no driver
+WARNING:Par:275 - The signal r4<7> has no driver
+WARNING:Par:275 - The signal r4<6> has no driver
+WARNING:Par:275 - The signal r6<1> has no driver
+WARNING:Par:275 - The signal r6<0> has no driver
+WARNING:Par:275 - The signal r5<5> has no driver
+WARNING:Par:275 - The signal r5<4> has no driver
+WARNING:Par:275 - The signal r4<9> has no driver
+WARNING:Par:275 - The signal r4<8> has no driver
+WARNING:Par:275 - The signal r6<3> has no driver
+WARNING:Par:275 - The signal r6<2> has no driver
+WARNING:Par:275 - The signal r5<7> has no driver
+WARNING:Par:275 - The signal r5<6> has no driver
+WARNING:Par:275 - The signal r7<1> has no driver
+WARNING:Par:275 - The signal r7<0> has no driver
+WARNING:Par:275 - The signal r6<5> has no driver
+WARNING:Par:275 - The signal r6<4> has no driver
+WARNING:Par:275 - The signal r5<9> has no driver
+WARNING:Par:275 - The signal r5<8> has no driver
+WARNING:Par:275 - The signal r7<3> has no driver
+WARNING:Par:275 - The signal r7<2> has no driver
+WARNING:Par:275 - The signal r6<7> has no driver
+WARNING:Par:275 - The signal r6<6> has no driver
+WARNING:Par:275 - The signal r7<5> has no driver
+WARNING:Par:275 - The signal r7<4> has no driver
+WARNING:Par:275 - The signal r6<9> has no driver
+WARNING:Par:275 - The signal r6<8> has no driver
+WARNING:Par:276 - The signal de_addr<6> has no load
+WARNING:Par:276 - The signal de_addr<7> has no load
+WARNING:Par:276 - The signal de_addr<8> has no load
+WARNING:Par:276 - The signal de_addr<9> has no load
+WARNING:Par:276 - The signal de_addr<10> has no load
+WARNING:Par:275 - The signal r7<7> has no driver
+WARNING:Par:275 - The signal r7<6> has no driver
+WARNING:Par:276 - The signal de_addr<11> has no load
+WARNING:Par:276 - The signal de_addr<12> has no load
+WARNING:Par:276 - The signal de_addr<13> has no load
+WARNING:Par:276 - The signal de_addr<14> has no load
+WARNING:Par:275 - The signal r7<9> has no driver
+WARNING:Par:275 - The signal r7<8> has no driver
+WARNING:Par:276 - The signal de_addr<15> has no load
+WARNING:Par:276 - The signal de_addr<16> has no load
+WARNING:Par:276 - The signal de_addr<17> has no load
+WARNING:Par:275 - The signal r1<11> has no driver
+WARNING:Par:275 - The signal r1<10> has no driver
+WARNING:Par:275 - The signal r2<8> has no driver
+WARNING:Par:275 - The signal r0<3> has no driver
+WARNING:Par:275 - The signal r1<12> has no driver
+WARNING:Par:275 - The signal r0<5> has no driver
+WARNING:Par:275 - The signal r0<4> has no driver
+WARNING:Par:275 - The signal r0<7> has no driver
+WARNING:Par:276 - The signal ack has no load
+WARNING:Par:275 - The signal r2<15> has no driver
+WARNING:Par:275 - The signal r0<1> has no driver
+WARNING:Par:275 - The signal r0<0> has no driver
+WARNING:Par:275 - The signal r0<13> has no driver
+WARNING:Par:275 - The signal r2<10> has no driver
+WARNING:Par:275 - The signal r2<9> has no driver
+WARNING:Par:275 - The signal r0<8> has no driver
+WARNING:Par:275 - The signal r0<6> has no driver
+WARNING:Par:275 - The signal r2<1> has no driver
+WARNING:Par:275 - The signal r2<0> has no driver
+WARNING:Par:275 - The signal r2<3> has no driver
+WARNING:Par:275 - The signal r2<2> has no driver
+WARNING:Par:275 - The signal r2<5> has no driver
+WARNING:Par:275 - The signal r2<4> has no driver
+WARNING:Par:275 - The signal r2<7> has no driver
+WARNING:Par:275 - The signal r2<6> has no driver
+WARNING:Par:275 - The signal r2<13> has no driver
+WARNING:Par:275 - The signal r2<12> has no driver
+WARNING:Par:276 - The signal de_nbyte<0> has no load
+WARNING:Par:276 - The signal de_nbyte<1> has no load
+WARNING:Par:275 - The signal r2<14> has no driver
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:989a69) REAL time: 1 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 1 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 1 secs 
+
+Phase 4.8
+..................................................
+.........
+..................................................
+............
+..................
+.
+Phase 4.8 (Checksum:9bcddb) REAL time: 1 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 1 secs 
+
+Phase 6.18
+Phase 6.18 (Checksum:39386fa) REAL time: 2 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 2 secs 
+
+Writing design to file drawing_line_wrapper.ncd
+
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU time to Placer completion: 2 secs 
+
+Starting Router
+
+Phase 1: 870 unrouted;       REAL time: 2 secs 
+
+Phase 2: 870 unrouted;       REAL time: 2 secs 
+
+Phase 3: 302 unrouted;       REAL time: 2 secs 
+
+Phase 4: 302 unrouted; (0)      REAL time: 2 secs 
+
+Phase 5: 301 unrouted; (0)      REAL time: 2 secs 
+
+Phase 6: 0 unrouted; (0)      REAL time: 2 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 2 secs 
+
+
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 2 secs 
+
+Generating "PAR" statistics.
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic  | Absolute   |Number of  
+                                            |            |            | Levels | Slack      |errors     
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | N/A        | 12.164ns   | 12     | N/A        | N/A       
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the
+   constraint does not cover any paths or that it has no requested value.
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:284 - There are 178 sourceless or loadless signals in this design.
+
+Total REAL time to PAR completion: 2 secs 
+Total CPU time to PAR completion: 2 secs 
+
+Peak Memory Usage:  107 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 179
+Number of info messages: 1
+
+Writing design to file drawing_line_wrapper.ncd
+
+
+
+PAR done!
+Release 8.1i - Bitgen I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+/opt/cadtools5/ise8.1i.
+   "drawing_line_wrapper" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+Opened constraints file drawing_line_wrapper.pcf.
+
+Tue Dec 15 16:40:38 2015
+
+Running DRC.
+WARNING:PhysDesignRules:367 - The signal <de_data<16>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<24>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<17>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<25>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_nbyte<3>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <clk> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <de_ack> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<18>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<26>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<19>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<27>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<20>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<28>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<21>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<29>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<22>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<30>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<23>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<31>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <busy> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<0>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<8>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<1>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<9>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<2>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<10>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<3>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<11>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<4>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<12>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<5>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<13>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<6>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<14>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<7>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_data<15>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r3<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <de_nbyte<2>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <req> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r4<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r5<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r6<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<6>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<7>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<8>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<9>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<10>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<11>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<12>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<13>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<14>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r7<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<15>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<16>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_addr<17>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<11>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r1<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <ack> is incomplete. The signal does
+   not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<15>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<10>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<9>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<8>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r0<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<1>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<0>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<3>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<2>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<5>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<4>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<7>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<6>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<13>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<12>> is incomplete. The signal is not
+   driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <de_nbyte<0>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <de_nbyte<1>> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <r2<14>> is incomplete. The signal is not
+   driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <clk> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <de_ack> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<9>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<8>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<11>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<10>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<13>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<12>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<1>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<0>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<15>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<14>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<3>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<2>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<5>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<4>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<7>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r3<6>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<1>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<0>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<3>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<2>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<5>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<4>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<7>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<6>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<9>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r1<8>> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <req> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <r2<11>> is completely unrouted.
+ERROR:PhysDesignRules - <98> messages for unrouted networks were not reported.
+ERROR:Bitgen:25 - DRC detected 256 errors and 50 warnings.
+Done
